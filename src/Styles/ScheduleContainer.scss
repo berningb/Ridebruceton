@@ -4,10 +4,11 @@
 
 
     .schedule-content {
-        width: 100%;
         display: flex;
         flex-direction: row;
         padding: 40px;
+        width: 65%;
+        margin: auto;
 
 
         #facebook-wrapper {
@@ -16,14 +17,14 @@
             justify-content: center;
 
             .facebook {
-                height: 300px;
-                width: 300px;
+                height: 150px;
+                width: 150px;
                 margin: auto;
 
                 .cover {
                     position: absolute;
-                    width: 300px;
-                    height: 300px;
+                    width: 150px;
+                    height: 150px;
                     background-color: rgba(0,0,0,.4);
                     border-radius: 100%;
                     z-index: 12;
@@ -35,8 +36,8 @@
     
                 img {
                     z-index: 11;
-                    height: 300px;
-                    width: 300px;
+                    height: 150px;
+                    width: 150px;
                 }
             }
         }
@@ -81,6 +82,13 @@
                     color: red;
                 }
             }
+        }
+    }
+}
+@media only screen and (max-width: 1500px) and (min-width: 900px)  {
+    .schedule-container {
+        .schedule-content{
+            width: 80%;
         }
     }
 }
