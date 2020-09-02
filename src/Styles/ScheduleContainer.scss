@@ -1,0 +1,104 @@
+.schedule-container {
+    width: 100%;
+    background-color: #E9EDF0 ;
+
+
+    .schedule-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+
+
+        #facebook-wrapper {
+            flex-grow: 3;
+            display: flex;
+            justify-content: center;
+
+            .facebook {
+                height: 300px;
+                width: 300px;
+                margin: auto;
+
+                .cover {
+                    position: absolute;
+                    width: 300px;
+                    height: 300px;
+                    background-color: rgba(0,0,0,.4);
+                    border-radius: 100%;
+                    z-index: 12;
+                }
+                .cover:hover {
+                    background-color: rgba(0,0,0,0);
+                    cursor: pointer;
+                }
+    
+                img {
+                    z-index: 11;
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+        }
+
+        .schedule {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+    
+            .schedule-name {
+                text-align: center;
+                padding: 20px;
+            }
+    
+    
+            .schedule-day {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: center;
+                padding: 10px;
+    
+                p {
+                    width: 125px;
+                    text-align: left;
+                    padding: 10px;
+                    margin-bottom: 0px;
+    
+                }
+    
+                .linkx {
+                    flex-grow:6;
+                }
+    
+                .open {
+                    color: green;
+                }
+                .closed {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .schedule-container {
+        .schedule-content{
+            flex-direction: column;
+
+            #facebook-wrapper {
+                padding: 40px;
+            }
+
+            .schedule {
+                width: 80%;
+            }
+        }
+    }
+ 
+}
