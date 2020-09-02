@@ -98,13 +98,14 @@
     .schedule-container {
         .schedule-content{
             flex-direction: column;
+            width: 100%;
 
             #facebook-wrapper {
                 padding: 40px;
             }
 
             .schedule {
-                width: 80%;
+                margin: 0px;
             }
         }
     }
