@@ -1,0 +1,38 @@
+.aboutsection {
+    width: 100%;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+
+
+    .carousel-caption {
+        width: 50%;
+        text-align: right;
+        margin: auto;
+        top: 55%;
+    }
+
+    .carousel-control-prev {
+        z-index: 100;
+    }
+
+    .carousel-control-next { 
+        z-index: 100;
+    }
+
+    .inner-caption {
+        position: absolute;
+        bottom: 0px;
+        padding: 0px;
+        border-left: 1920px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 720px solid rgba(0,0,0,.8);
+    }
+
+
+    .carousel-item {
+        transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+    }
+}

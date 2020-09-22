@@ -1,0 +1,87 @@
+.footer {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    
+    a {
+        color: goldenrod;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: left;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+
+    .footer-backdrop {
+        background-image: url('../Assets/back.jpg');
+        height: 100%;
+        padding: 20px;
+
+        .footer-container {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            font-size: 14px;
+            text-align: left;
+
+            .contact {
+                border: 0px;
+                .nav-link a{
+                    display: flex;
+                }
+
+            }
+            .services {
+                width: 450px;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .nav-link {
+                        width: 50%;
+                    }
+                }
+            }
+            .company {
+                width: 300px;
+            }
+            .apt {
+                border: 1px solid goldenrod;
+                height: 100%;
+                flex-grow: 1;
+                display: flex;
+
+                a {
+                    color: goldenrod;
+                    font-size: 16px;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+
+            .apt:hover {
+                background-color: rgba(255,255,255,.5);
+            }
+        }
+    }
+
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        background-color: black;
+        margin: 0;
+    }
+
+
+    
+}

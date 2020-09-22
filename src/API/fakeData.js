@@ -1,85 +1,132 @@
+import cycle from '../Assets/cycle.jpg'
+import atv from '../Assets/atv.jpg'
+import golf from '../Assets/golf.jpg'
 
-
-
-const serviceType = {
+const fakeData = {
     Oilandfilter : {
-        icon: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
-        name: 'Change Oil and Filter'
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Oil Change',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
     },
-    Brakepads : {
-        icon: 'https://img.icons8.com/windows/32/000000/press-break-pedal.png',
-        name: 'Brake Pads'
+    EngineRepair : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Engine repair',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
     Batteryreplacement : {
-        icon: 'https://img.icons8.com/ios/50/000000/car-battery.png',
-        name: 'Battery Replacement'
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Replace Battery',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
-    Sparkplug : {
-        icon: 'https://img.icons8.com/ios/50/000000/spark-plug.png',
-        name: 'Spark Plug Replacement'
+    Repair : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Basic Repair',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
-    Alternator : {
-        icon: 'https://img.icons8.com/windows/32/000000/gears.png',
-        name: 'Alternator Replacement'
+    Power : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Power',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
-    Starter : {
-        icon: 'https://img.icons8.com/metro/26/000000/replace.png',
-        name: 'Starter Replacement'
+    Suspension : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Suspension',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
-    Fuelpump : {
-        icon: 'https://img.icons8.com/material-outlined/24/000000/gas-pump.png',
-        name: 'Fuel Pump Replacement'
+    Upgrades : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Upgrades',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
-    Paintremoval : {
-        icon: 'https://img.icons8.com/ios/50/000000/cleanup-edges.png',
-        name: 'Paint Removal'
+    ExhaustSystem : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Exhaust System',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
-    Paint : {
-        icon: 'https://img.icons8.com/pastel-glyph/64/000000/roller-brush.png',
-        name: 'Paint'
+    Diagnosis : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Diagnosis',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
-    Custompattern : {
-        icon: 'https://img.icons8.com/ios/50/000000/customize-view.png',
-        name: 'Custom Pattern'
+    Electrical : {
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Electrical',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
     Tirechange : {
-        icon: 'https://img.icons8.com/dotty/80/000000/flat-tire.png',
-        name: 'Tire Change'
+        image: 'https://img.icons8.com/windows/32/000000/engine-oil-level.png',
+        name: 'Tire Change',
+        text: "To keep your bike running properly at all times, we offer a number of services in the Kent area that are carried out by our certified, expert service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. We use high-tech diagnostic equipment to guarantee your bike is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car."
+
     },
 }
 
-let {Oilandfilter, Brakepads, Batteryreplacement, 
-    Starter, Fuelpump, Alternator, Sparkplug, Paintremoval, Paint, Custompattern, Tirechange} = serviceType
-let fakeData = { 
 
-    "Services": {
-        "CYCLES": [
+
+
+
+let { Oilandfilter, EngineRepair, Suspension, Repair, 
+    Power, Batteryreplacement, Diagnosis, ExhaustSystem, Upgrades, 
+    Electrical, Tirechange } = fakeData
+
+const services = [
+    Oilandfilter,
+    EngineRepair,
+    Batteryreplacement, 
+    Repair, 
+    Power, 
+    Suspension, 
+    Upgrades, 
+    ExhaustSystem,
+    Diagnosis, 
+    Electrical, 
+    Tirechange
+]
+
+let vehicleTypes = [ 
+    {
+        "Image": cycle,
+        "Name": 'Cycles',
+        "Services": [
             Oilandfilter,
-            Brakepads,
             Batteryreplacement,
-            Starter,
-            Fuelpump,
-            Alternator,
-            Sparkplug,
-            Tirechange
-        ],
-        "ATV": [
+            EngineRepair,
+            Repair,
+            Electrical,
+            Upgrades,
+            Tirechange,
+            ExhaustSystem,
+            Diagnosis
+        ]
+    },{
+        "Image": golf,
+        "Name": 'Golf Cart',
+        "Services": [
             Oilandfilter,
-            Brakepads,
             Batteryreplacement,
-            Starter,
-            Fuelpump,
-            Alternator,
-            Sparkplug,
+            Power,
             Tirechange
-        ],
-        "HYDROGRAPHICS": {
-            Paint,
-            Paintremoval,
-            Custompattern
-        }  
+        ]
+    },{
+        "Image": atv,
+        "Name": 'ATV',
+        "Services": [
+            Oilandfilter,
+            Batteryreplacement,
+            Tirechange,
+            Suspension
+        ]
     }
-}
+]
 
 
-export default fakeData
+export default {vehicleTypes, services}

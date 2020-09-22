@@ -1,105 +1,78 @@
-#service-section {
-    padding: 50px;
-    background-color: #E9EDF0;
-    
+.service {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../Assets/back.jpg');
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
     h1 {
-        width: 100%;
+        margin: auto;
         text-align: center;
+        background-color: goldenrod;
+        height: 75px;
+        display: flex;
         justify-content: center;
-        color: black;
-        padding: 50px;
-        padding-top: 0px;
+        align-items: center;
+        width: 100%;
     }
 
-    #services-wrapper {
+    .service-wrapper {
+        width: 60%;
         margin: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        width: 60%;
+        flex-wrap: wrap;
+        padding: 20px;
 
-        .service-box-container {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
+        .box {
+            min-height: 500px;
+            width: 50%;
+            text-align: center;
 
-            .service-box-type {
-                text-align: center;
-                margin: auto;
+            h3 {
                 padding: 20px;
-                font-weight: 400;
+                color: white;
             }
 
-            .service-box {
+            img {
+                width: 79.5%; // removed the weird pixel overhang
+                height: 50%;
+                margin: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+
+            ul {
                 display: flex;
-                flex-direction: column;
-                text-align: center;
-                flex-grow: 1;
-    
-                .service-list {
-                    padding: 20px;
-                    height: 100%;
-                }
-    
-                .service-type {
+                flex-direction: row;
+                list-style-type: disc;
+                flex-wrap: wrap;
+                width: 80%;
+                margin: auto;
+                margin-bottom: 0px;
+                border: 1px solid black;
+                background-color: white;
+                padding: 20px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+
+                li {
+                    width: 33%;
+                    height: 55px;
                     display: flex;
-                    flex-direction: row;
-                    padding: 15px;
-                }
-    
-                .icon {
-                    width: 30%
-                }
-    
-                span {
-                    width: 70%;
-                    text-align: left;
-                }
-    
-                img {
-                    width: 30px;
-                    height: 30px;
+
+                    a {color: goldenrod;
+                        padding: 5px;
+                        font-size: 12px;
+                        color: black;
+                        width: 100%;
+                        text-align: left;
+                        margin: auto;}
                 }
             }
         }
     }
-}
-
-
-@media only screen and (max-width: 1500px) and (min-width: 900px)  {
-    #service-section {
-        #services-wrapper {
-            width: 90%;
-
-            .service-box {
-                margin-bottom: 40px;
-
-                .service-list {
-                    padding: 20px;
-                    min-height: 550px;
-                }
-            }
-        }
-    }
- 
-}
-
-@media (max-width: 900px) {
-
-    #service-section {
-        #services-wrapper {
-            flex-direction: column;
-            width: 100%;
-
-            .service-box-container {
-                width: 100%;
-
-                .service-list {
-                    padding: 20px;
-                    min-height: 200px;
-                }
-            }
-        }
-    }
- 
 }

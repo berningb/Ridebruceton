@@ -15,3 +15,7 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.content {
+  min-height: 500px;
+}
