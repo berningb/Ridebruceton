@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/ServiceDisplay.scss'
 
-const Services = ({match, location}) => {
+const ServiceDisplay = ({match, location}) => {
     
     const { service } = location.state
     return (
@@ -12,5 +12,5 @@ const Services = ({match, location}) => {
      </div>
     )
 }
-export default Services;
+export default ServiceDisplay;
 

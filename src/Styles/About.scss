@@ -1,8 +1,22 @@
+@import "./util/Variables.scss";
+
 .about {
     color: white;
     margin: auto;
     padding: 20px 0;
-    width: 60%;
+    width: $base-width;
     font-family: 'Bitter', serif;
     font-family: 'Roboto', sans-serif;
+
+
+    .img {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        width: $med-width !important;
+    }
 }

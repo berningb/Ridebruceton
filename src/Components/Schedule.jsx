@@ -1,5 +1,7 @@
 import React from 'react'
 import '../Styles/Schedule.scss'
+import { Link } from "react-router-dom";
+
 import facebook from '../Assets/facebook.png'
 
 const Schedule = () =>  {
@@ -16,7 +18,7 @@ const Schedule = () =>  {
     days.forEach((element, i) => {
         newDays.push(
             <div className='schedule-day' key={i}>
-                <div>{element[0]}</div>
+                <div className='day'>{element[0]}</div>
                 <div className='time'>{element[1]}</div>
             </div>
         )
@@ -41,13 +43,13 @@ const Schedule = () =>  {
                                 </a>
                             </div>
                             <div className='item-container'>
-                                <div className='item-box'>
-                                    Email Us
-                                </div>
+                                <Link to="/contact">
+                                    <div className='item-box'>Email Us</div>
+                                </Link>
                                 <br />
-                                <div className='item-box'>
-                                    Get Directions
-                                </div>
+                                <Link to="/contact">
+                                    <div className='item-box'>Get Directions</div>
+                                </Link>
                             </div>
                         </div>
                     </div>

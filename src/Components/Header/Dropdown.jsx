@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import data from '../../API/fakeData'
 import '../../Styles/Dropdown.scss'
 import { animated } from 'react-spring'
 
-const Dropdown = ({closeDropdown, openDropdown, show, style, fade}) => {
+const Dropdown = ({closeDropdown, openDropdown, show, style, fade, link, data, type, options}) => {
     let services = []
 
-    data.vehicleTypes.map((service, index) => {
+    data.map((service, index) => {
         let links = []
-        service.Services.map((s, i) => {
+        service.Options.map((s, i) => {
             links.push(
             <Link onClick={() => closeDropdown()} 
                 className="dropdown-item" 
                 key={'link_' + i} to={{
-                    pathname: `/service/${s.name}`,
+                    pathname: `${link}/${s.name + index}`,
                     state: {
                         service: s
                     }}}>
@@ -40,7 +39,7 @@ const Dropdown = ({closeDropdown, openDropdown, show, style, fade}) => {
             <Link onClick={() => closeDropdown()} 
             onMouseEnter={()=>openDropdown()} 
             className="btn btn-secondary dropdown-toggle" 
-            to="/service">Repair Services</Link>
+            to={link}>{type}</Link>
             {show && (<div className="dropdown" >
                         <animated.div className="dropdown-menu show " style={style} aria-labelledby="dropdownMenuButton">
                             {services}

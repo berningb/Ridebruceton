@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Styles/About.scss'
+import vanity2 from '../Assets/vanity2.jpg'
 
 
 const About = () =>  {
@@ -7,8 +8,8 @@ const About = () =>  {
     return (
         <div className='about'>
             <h2> About Ride Bruceton inc.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam fuga reprehenderit laboriosam repellat, fugiat praesentium id voluptatum quas ipsa corrupti iusto totam neque dolores voluptates assumenda eveniet itaque quae! Voluptatum neque quis modi, natus quibusdam harum, vero dolore earum sit, minus distinctio. Maiores cum eius assumenda tenetur, voluptatibus, ab laboriosam consequuntur consectetur, dolores temporibus ipsum saepe minima nobis expedita nulla. Sint, eius impedit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam fuga reprehenderit laboriosam repellat, fugiat praesentium id voluptatum quas ipsa corrupti iusto totam neque dolores voluptates assumenda eveniet itaque quae! Voluptatum neque quis modi, natus quibusdam harum, vero dolore earum sit, minus distinctio. Maiores cum eius assumenda tenetur, voluptatibus, ab laboriosam consequuntur consectetur, dolores temporibus ipsum saepe minima nobis expedita nulla. Sint, eius impedit?</p>
+            <p>Here at Ride Bruceton we take pride in our bikes. Rather its a V-twin or metric, we can bring it back to life. </p>
+            <p>We Strive for excellence above all else and guarentee customer satisfaction. Interested in setting up an appointment? Call us at (731) 252-0202 or come by the store located at US-70, Bruceton, TN 38317. </p>
         </div>
         )
 }

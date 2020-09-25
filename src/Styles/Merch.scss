@@ -1,0 +1,47 @@
+
+.merch {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../Assets/back.jpg');
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+
+    .banner {
+        background-image: url('../Assets/banner2.jpg');
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+    }
+    h2 {
+        margin: auto;
+        text-align: center;
+        color: white;
+        width: 60%;
+    }
+
+    p {
+      width: 60%;
+      margin: auto;
+    }
+
+    .merch-wrapper {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+
+       .merch-image-box {
+          width: 50%;
+          margin-bottom: 40px;
+          img {
+            width: 500px;
+            height: 300px;
+          }
+       }
+    }
+}

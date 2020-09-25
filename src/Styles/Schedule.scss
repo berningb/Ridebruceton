@@ -1,5 +1,8 @@
+@import "./util/Variables.scss";
+
+
 .schedule-container {
-    width: 100%;
+    width: $base-width;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -28,6 +31,7 @@
             .link-containers {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-evenly;
                 padding: 20px;
 
                 .facebook-container {
@@ -37,8 +41,11 @@
                 }
 
                 .item-container {
-                    flex-grow: 1;
                     
+                    a {
+                        color: white;
+                    }
+
                     .facebook {
                         height: 60px;
                         width: 60px;
@@ -54,6 +61,7 @@
                     border: 1px solid white;
                     display: flex;
                     justify-content: center;
+                    padding: 20px;
                     align-items: center;
                 }
                 .item-box:hover {
@@ -71,7 +79,7 @@
         .shop {
             display: flex;
             flex-direction: column;
-            width: 60%;
+            width: $base-width;
 
             .row-containers {
                 display: flex;
@@ -82,15 +90,12 @@
                 .schedule-day {
                     width: 50%;
                     display: flex;
-    
-                    .time {
-                    min-width: 150px;
-                    }
+                    margin: 0px;
         
                     div {
                         text-align: left;
                         padding: 10px;
-                        min-width: 150px;
+                        min-width: 102px;
                     }
                 }
             };
@@ -101,27 +106,26 @@
 }
 @media only screen and (max-width: 1500px) and (min-width: 900px)  {
     .schedule-container {
-        .schedule-content{
-            width: 80%;
-        }
+       
     }
 }
 
 
+@media (max-width: 1250px) {
+    .schedule-container {
+        .card {
+            flex-direction: column !important;
+
+            .shop {
+                width: 90% !important; 
+                margin: auto;
+            }
+        } 
+    }
+}
+
 @media (max-width: 900px) {
     .schedule-container {
-        .schedule-content{
-            flex-direction: column;
-            width: 100%;
-
-            #facebook-wrapper {
-                padding: 40px;
-            }
-
-            .schedule {
-                margin: 0px;
-            }
-        }
+        width: $med-width !important;
     }
- 
 }

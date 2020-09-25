@@ -1,6 +1,17 @@
-import cycle from '../Assets/cycle.jpg'
+import cycle from '../Assets/garage3.JPG'
 import atv from '../Assets/atv.jpg'
 import golf from '../Assets/golf.jpg'
+
+
+
+import merch1 from '../Assets/merch1.JPG'
+import merch2 from '../Assets/merch2.JPG'
+import merch3 from '../Assets/merch3.JPG'
+import merch4 from '../Assets/merch4.JPG'
+import merch5 from '../Assets/merch5.JPG'
+import merch6 from '../Assets/merch6.JPG'
+import merch7 from '../Assets/merch7.JPG'
+import merch8 from '../Assets/merch8.JPG'
 
 const fakeData = {
     Oilandfilter : {
@@ -95,8 +106,8 @@ const services = [
 let vehicleTypes = [ 
     {
         "Image": cycle,
-        "Name": 'Cycles',
-        "Services": [
+        "Name": 'Cycles | V-Twin & Metric',
+        "Options": [
             Oilandfilter,
             Batteryreplacement,
             EngineRepair,
@@ -110,7 +121,7 @@ let vehicleTypes = [
     },{
         "Image": golf,
         "Name": 'Golf Cart',
-        "Services": [
+        "Options": [
             Oilandfilter,
             Batteryreplacement,
             Power,
@@ -119,7 +130,7 @@ let vehicleTypes = [
     },{
         "Image": atv,
         "Name": 'ATV',
-        "Services": [
+        "Options": [
             Oilandfilter,
             Batteryreplacement,
             Tirechange,
@@ -129,4 +140,24 @@ let vehicleTypes = [
 ]
 
 
-export default {vehicleTypes, services}
+let merch = [ 
+    {
+        "image": merch1,
+    },{
+        "image": merch2,
+    },{
+        "image": merch3,
+    },{
+        "image": merch4,
+    },{
+        "image": merch5,
+    },{
+        "image": merch6,
+    },{
+        "image": merch7,
+    },{
+        "image": merch8,
+    }
+]
+
+export default {vehicleTypes, services, merch}

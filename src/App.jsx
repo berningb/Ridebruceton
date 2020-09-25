@@ -8,6 +8,7 @@ import Merch from './Pages/Merch/Merch'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import ServiceDisplay from './Components/ServiceDisplay'
+import MerchDisplay from './Components/MerchDisplay'
 import './Styles/App.css';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/service" exact component={Service} />
         <Route path="/service/:serviceId" component={ServiceDisplay} />
         <Route path="/merch" exact component={Merch} />
+        <Route path="/merch/:merchId" component={MerchDisplay} />
         <Route path="/contact" exact component={Contact} />
       </Switch>
       <Footer />

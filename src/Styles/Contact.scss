@@ -1,7 +1,20 @@
-.contact {
-    width: 60%;
+.contact-page {
+    width: 100%;
     margin: auto;
-    padding: 20px;
+    background-image: url('../Assets/back.jpg');
+
+    form {
+        margin-bottom: 40px;
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+    }
+    h2 {
+        color: white;
+    }
+
+    .form {margin-bottom: 40px;}
+    
 }
 
 h2 {
@@ -9,8 +22,3 @@ h2 {
     padding: 20px;
 }
 
-.card {
-    padding: 20px;
-    width: 60%;
-    margin: auto;
-}

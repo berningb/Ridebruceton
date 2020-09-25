@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Dropdown from './Dropdown'
 import { useSpring } from 'react-spring'
-
+import data from '../../API/fakeData'
 import '../../Styles/Nav.scss';
 
 const Nav = () => {
@@ -37,31 +37,37 @@ const Nav = () => {
     })
 
 
-    const [isShown, setIsShown] = useState(false);
+    const [servIsShown, setServIsShown] = useState(false);
+
     const [style, setStyle] = useState(move);
     const [styleFade, setStyleFade] = useState(fade);
    
-    const closeDropdown = () => {
-        setIsShown(false)
+    const closeServDropdown = () => {
+        setServIsShown(false)
         setStyleFade(fadeOut)
     }   
-     const openDropdown = () => {
-        setIsShown(true)
+     const openServDropdown = () => {
+        setServIsShown(true)
         setStyle(move)
         setStyleFade(fade)
     }
-
     return (
         <div className='nav'>
             <nav>
                 <ul>
                     <li className='nav-link'><Link to="/">Home</Link></li>
-                    <li className='nav-link ' onMouseLeave={() => {setStyle(moveBack)
-                                                            setStyleFade(fadeOut)}}>
-                        <Dropdown show={isShown} fade= {styleFade}
-                        openDropdown={() => openDropdown()}
-                        closeDropdown={() => closeDropdown()}
-                        style={style}/>
+                    <li className='nav-link ' 
+                        onMouseLeave={() => {
+                            setStyle(moveBack)
+                            setStyleFade(fadeOut)
+                            }}>
+                        <Dropdown show={servIsShown} fade= {styleFade}
+                        openDropdown={() => openServDropdown()}
+                        closeDropdown={() => closeServDropdown()}
+                        style={style}
+                        type='Repair Services'
+                        link={'/service'}
+                        data={data.vehicleTypes}/>
                     </li>
                     <li className='nav-link'><Link to="/merch">Merch</Link></li>
                     <li className='nav-link'><Link to="/contact">Contact</Link></li>
