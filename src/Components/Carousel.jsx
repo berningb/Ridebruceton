@@ -7,6 +7,7 @@ const MyCarousel = ({height, data, showCover}) => {
     const carouselItems = []
 
     data.forEach((element, i) => {
+
         carouselItems.push(
         <Carousel.Item key={i}>
             <div className='image'

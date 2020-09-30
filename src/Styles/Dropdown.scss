@@ -6,7 +6,9 @@
         border: none !important;
     }
 
-   
+    .btn {
+        color: white !important;
+    }
    
     .dropdown-menu {
         width: 800px;
@@ -49,10 +51,6 @@
             }
            
         }
-
-        
-       
-        
     }
 }
 
@@ -72,7 +70,12 @@
 
 
 @media (max-width: 1170px) {
-    .dropdown .dropdown-menu {
-        margin-left: -200px;
-    }
+    .dropdown-menu {
+        width: 600px !important;
+        flex-direction: column;
+
+            .dropdown-menu-wrap {
+                width: 100% !important;
+            }
+        }
 }

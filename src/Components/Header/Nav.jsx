@@ -9,14 +9,14 @@ const Nav = () => {
 
 
     const move = useSpring({
-        height: 300,
+        height: 400,
         from: { height: 0 },
         config: { duration: 0 },
         reset: true,
     })
     const moveBack = useSpring({
         height: 0,
-        from: { height: 300 },
+        from: { height: 400 },
         config: { duration: 0 },
         reset: true,
     })
@@ -52,33 +52,36 @@ const Nav = () => {
         setStyleFade(fade)
     }
     return (
-        <div className='nav'>
-            <nav>
-                <ul>
-                    <li className='nav-link'><Link to="/">Home</Link></li>
-                    <li className='nav-link ' 
-                        onMouseLeave={() => {
-                            setStyle(moveBack)
-                            setStyleFade(fadeOut)
-                            }}>
-                        <Dropdown show={servIsShown} fade= {styleFade}
-                        openDropdown={() => openServDropdown()}
-                        closeDropdown={() => closeServDropdown()}
-                        style={style}
-                        type='Repair Services'
-                        link={'/service'}
-                        data={data.vehicleTypes}/>
-                    </li>
-                    <li className='nav-link'><Link to="/merch">Merch</Link></li>
-                    <li className='nav-link'><Link to="/contact">Contact</Link></li>
-                    <li className='nav-link'><a href="https://www.facebook.com/Brucetonriders/">Request an Appointment</a></li>
-                </ul>
+        <div className='nav-wrapper'>
+            <nav class="navbar navbar-expand-lg navbar-dark nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li className='nav-link active'><Link to="/">Home</Link></li>
+                        <li className='nav-link ' 
+                            onMouseLeave={() => {
+                                setStyle(moveBack)
+                                setStyleFade(fadeOut)
+                                }}>
+                                <Dropdown show={servIsShown} fade= {styleFade}
+                                openDropdown={() => openServDropdown()}
+                                closeDropdown={() => closeServDropdown()}
+                                style={style}
+                                type='Repair Services'
+                                link={'/service'}
+                                data={data.vehicleTypes}/>
+                        </li>
+                        <li className='nav-link'><Link to="/merch">Merch</Link></li>
+                        <li className='nav-link'><Link to="/contact">Contact</Link></li>
+                        <li className='nav-link'><a href="https://www.facebook.com/Brucetonriders/">Request an Appointment</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
+            
     )
 }
 
 export default Nav;
-
-
-

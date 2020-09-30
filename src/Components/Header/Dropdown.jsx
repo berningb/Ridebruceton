@@ -38,7 +38,7 @@ const Dropdown = ({closeDropdown, openDropdown, show, style, fade, link, data, t
         <div className="dropdown">
             <Link onClick={() => closeDropdown()} 
             onMouseEnter={()=>openDropdown()} 
-            className="btn btn-secondary dropdown-toggle" 
+            className="btn btn-secondary dropdown-toggle nav-link" 
             to={link}>{type}</Link>
             {show && (<div className="dropdown" >
                         <animated.div className="dropdown-menu show " style={style} aria-labelledby="dropdownMenuButton">

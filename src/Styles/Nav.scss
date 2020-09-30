@@ -1,8 +1,5 @@
-.nav {
+.nav-wrapper {
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 11;
     background-color: black;
     border: 1px solid goldenrod;
     border-right: 0px;
@@ -10,15 +7,18 @@
     font-family: 'Bitter', serif;
     font-family: 'Roboto', sans-serif;
 
-    nav {
-        display: flex;
-        margin: auto;
-        width: 60%;
-    }
 
-    .nav {
-        max-height: 80px;
+    .navbar {
+        margin: auto
     }
+}
+
+.nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 11;
     
     ul {
         width: 100%;
@@ -26,7 +26,6 @@
         display: flex;
         align-items: center;
         text-align: center;
-        padding: 10px;
         margin: 0px;
 
         li {
@@ -58,12 +57,8 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .nav {
-        width: 100% !important;
-
-        ul {
-            flex-direction: column;
-        }
+    nav {
+        width: 100%;
     }
 
 }

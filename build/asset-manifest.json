@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1da88f82.chunk.css",
-    "main.js": "/static/js/main.73f257e2.chunk.js",
-    "main.js.map": "/static/js/main.73f257e2.chunk.js.map",
+    "main.css": "/static/css/main.dd6f5d70.chunk.css",
+    "main.js": "/static/js/main.150bb4b7.chunk.js",
+    "main.js.map": "/static/js/main.150bb4b7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e8880884.js",
     "runtime-main.js.map": "/static/js/runtime-main.e8880884.js.map",
-    "static/js/2.5d32d989.chunk.js": "/static/js/2.5d32d989.chunk.js",
-    "static/js/2.5d32d989.chunk.js.map": "/static/js/2.5d32d989.chunk.js.map",
+    "static/js/2.1016678f.chunk.js": "/static/js/2.1016678f.chunk.js",
+    "static/js/2.1016678f.chunk.js.map": "/static/js/2.1016678f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.66b55008ace3406dcef814d0b8686e21.js": "/precache-manifest.66b55008ace3406dcef814d0b8686e21.js",
+    "precache-manifest.9ced4a85eaa8008bf504ef4edd8cc174.js": "/precache-manifest.9ced4a85eaa8008bf504ef4edd8cc174.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1da88f82.chunk.css.map": "/static/css/main.1da88f82.chunk.css.map",
-    "static/js/2.5d32d989.chunk.js.LICENSE.txt": "/static/js/2.5d32d989.chunk.js.LICENSE.txt",
+    "static/css/main.dd6f5d70.chunk.css.map": "/static/css/main.dd6f5d70.chunk.css.map",
+    "static/js/2.1016678f.chunk.js.LICENSE.txt": "/static/js/2.1016678f.chunk.js.LICENSE.txt",
     "static/media/atv.jpg": "/static/media/atv.d6d272bd.jpg",
     "static/media/Footer.scss": "/static/media/back.c5675c1f.jpg",
     "static/media/Services.scss": "/static/media/banner.8528ab70.jpg",
@@ -22,6 +22,7 @@
     "static/media/cycle6.jpg": "/static/media/cycle6.8a8ccbf7.jpg",
     "static/media/garage3.JPG": "/static/media/garage3.2756bf2e.JPG",
     "static/media/golf.jpg": "/static/media/golf.8c5e8742.jpg",
+    "static/media/honda2.jpg": "/static/media/honda2.9d35453a.jpg",
     "static/media/merch1.JPG": "/static/media/merch1.8cf069b0.JPG",
     "static/media/merch2.JPG": "/static/media/merch2.a6de0a95.JPG",
     "static/media/merch3.JPG": "/static/media/merch3.b42e4689.JPG",
@@ -32,12 +33,13 @@
     "static/media/merch8.JPG": "/static/media/merch8.2432267d.JPG",
     "static/media/shop1.JPG": "/static/media/shop1.bb5b2325.JPG",
     "static/media/shop3.jpeg": "/static/media/shop3.db39e571.jpeg",
-    "static/media/vanity2.jpg": "/static/media/vanity2.ab3dbe0e.jpg"
+    "static/media/vanity2.jpg": "/static/media/vanity2.cbd37bef.jpg",
+    "static/media/vanity3.jpg": "/static/media/vanity3.a69ff933.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e8880884.js",
-    "static/js/2.5d32d989.chunk.js",
-    "static/css/main.1da88f82.chunk.css",
-    "static/js/main.73f257e2.chunk.js"
+    "static/js/2.1016678f.chunk.js",
+    "static/css/main.dd6f5d70.chunk.css",
+    "static/js/main.150bb4b7.chunk.js"
   ]
 }
